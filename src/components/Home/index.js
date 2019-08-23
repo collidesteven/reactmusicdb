@@ -1,6 +1,5 @@
 import React from 'react';
 import axios from 'axios';
-import Header from '../header';
 import Banner from './banner';
 import ArtistsList from './artistsList'
 
@@ -20,10 +19,9 @@ class Home extends React.Component{
   }
 
   render(){
-    console.log(this.state);
+
     return(
       <>
-        <Header/>
         <Banner/>
         <ArtistsList allArtists = {this.state.artists}/>
         <div>Home Class</div>
